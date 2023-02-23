@@ -1,4 +1,4 @@
-const Students = [
+const students = [
     {
         student1: {
             name: 'abul',
@@ -42,20 +42,44 @@ const Students = [
             My subjects are: bangla,english,math
  * 
  */
-Students.map(student => {
-    for(let i in student){
-        const {name, age, isMale, education} = student[i];
-        const {subjects} = education;
 
-        const information = `
-        My name is ${name}
-        My age is ${age}
-        My gender is ${isMale === true ? 'Male' : 'Female'}
-        My subjects are: ${subjects.map((s) => s)}
+
+students.map(student=>{
+    for (const i in student) {
+        const {name,age,isMale,education}=student[i];
+        const {subjects}=education;
+        const information=`
+        My Name is ${name}
+        My age is ${age},
+        My gender is ${isMale===true?'male':'female'}
+        My subjects are : ${subjects}
         `
-        console.log(information)
+        console.log(information);
     }
 })
+
+
+
+
+
+
+
+
+
+// Students.map(student => {
+//     for(let i in student){
+//         const {name, age, isMale, education} = student[i];
+//         const {subjects} = education;
+
+//         const information = `
+//         My name is ${name}
+//         My age is ${age}
+//         My gender is ${isMale === true ? 'Male' : 'Female'}
+//         My subjects are: ${subjects.map((s) => s)}
+//         `
+//         console.log(information)
+//     }
+// })
 
 
 
