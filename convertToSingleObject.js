@@ -6,29 +6,17 @@ const Persons = [
 ]
 
 
-// {
-//     ID01:"abul vai",
-//     ID02: 'babul vai'
-// }
+let newObject={};
 
-const info = {};
-
-// info['name'] = 'mehedy';
-// info['age'] = 25
-// console.log(info)
-
-Persons.map(p => {
-   const id = p.id;
-   const value = p.name;
-
-   info[id] = value;
+const create=Persons.forEach(x=>{
+    const id=x.id;
+    const value=x.name;
+    newObject[id]=value;
 })
 
-console.log(info.ID02)
 
 
-
-
+console.log(newObject);
 
 
 
