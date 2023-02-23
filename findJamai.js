@@ -8,6 +8,5 @@ const polapain = [
 ];
 
 
-const jamais = polapain.filter(pola => (pola.job === 'sorkari' && pola.salary >=20000) || (pola.job === 'besorkari' && pola.salary >=40000))
-
-console.log(jamais)
+const stableJamais=polapain.filter(pola=>(pola.job==='sorkari'&&pola.salary>20000)||(pola.job==='besorkari'&&pola.salary>40000))
+console.log(stableJamais);
